@@ -24,3 +24,15 @@ const listaDeTeclas = document.querySelectorAll('.tecla');
     tecla.onclick = function () {
         tocaSom (idAudio0;
     }
+tecla.onkeydown = function (evento) {
+
+  if (evento.code === "Space" || evento.code === 'Enter') {
+    tecla.classList.add('ativa');
+  }
+
+}
+tecla.onkeyup = function () {
+  tecla.classList.remove('ativa');
+    }
+
+  }
